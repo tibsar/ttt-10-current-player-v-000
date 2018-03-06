@@ -11,4 +11,8 @@ def turn_count(board)
   # count 
   
   board.count{ |item| item == "X" || item == "O" }
+  
+  board.count do |item|
+    item == "X" || item == "O"
+  end 
 end 
